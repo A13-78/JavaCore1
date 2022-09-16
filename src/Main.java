@@ -68,6 +68,14 @@ public class Main {
         Присвойте строке name значение Lyapis, строке surname значение — Trubetskoy.
         В следующей строке вызовите метод changePerson и передайте в него эту переменную.
          */
+        Person person = new Person();
+        person.name = "Lyapis";
+        person.surname = "Trubetskoy";
+        System.out.println(person.toString());
+        Person person1 = changePerson(person);
+        System.out.println(person1);
+
+
 
 
         /*  Задание 10
@@ -79,6 +87,11 @@ public class Main {
         В следующей строке вызовите метод changePerson и передайте в него эту переменную
          */
 
+        Person person2 = new Person();
+        person.name = "Lyapis";
+        person.surname = "Trubetskoy";
+        person = changePerson(person);
+        System.out.println(person);
     }
 
     public static int changeValue(int value) {
@@ -108,6 +121,14 @@ public class Main {
         }
         return value;
     }
+
+    public static Person changePerson(Person person) {
+        person = new Person();
+        person.name = "Ilya";
+        person.surname = "Lagutenko";
+        return person;
+    }
+
 
 
 
